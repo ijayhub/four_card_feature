@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    font-family:'poppins', sans-serif;
+}
+header{
+    text-align: center;
+    max-width:500px;
+    margin: 50px auto;
+
+} 
+h1{
+    font-weight: 200;
+    margin:0;
+}
+h1 span{
+    font-weight: 600;
+}
+p{
+    color:hsl(229, 6%, 66%)
+
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    width:1230px;
+    margin:0 auto;
+    justify-content: center;
+}
+.box{
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
+    border-radius:5px;
+    padding:30px;
+    position: relative;
+    top:100%;
+    overflow:hidden;
+    width: 350px;    
+    margin:15px;
+    
+}
+.box::after{
+    content:"";
+    background-color:transparent;
+    position: absolute;
+    top:0;
+    left: 0;
+    height:5px;
+    width:100%;
+}
+.box-cyan::after{
+background-color:  hsl(180, 62%, 55%);;
+}
+.box-red::after{
+    background-color:hsl(0, 78%, 62%);
+}
+.box-orange::after{
+    background-color:hsl(34, 97%, 64%);
+} 
+.box-blue::after{
+    background-color:hsl(212, 86%, 64%);
+} 
+.box-push{
+    transform:translateY(50%) ;
+     
+}
+    
+
+.box h3{
+    margin:0;
+}
+.box p{
+    font-size:14px;
+    margin: 15px 0 30px;
+}
+.box img{
+    display:block;
+    margin-left:auto;
+}
+footer {
+    text-align: center;
+}
+
+.img1{
+    position:relative;
+    top:20px;
+}
+.img2{
+    position:relative;
+    top:10px;
+}
+.img3{
+    position:relative;
+    top:10px;   
+}
+.img4{
+    position:relative;
+    top:10px; 
+}
+/* mobile responsive */
+@media only screen and (max-width:768px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        position:relative;
+        bottom:100px;
+        width:100%;
+        
+    }
+    .box{
+        margin:60px;
+        
+    }
+    .box1{
+        position:relative;
+        top:10px;
+    }
+    .box2{
+        position:relative;
+        top:40px;
+    }
+    
+    .box3{
+        position:relative;
+        bottom:350px;
+    }
+    .box4{
+        position:relative;
+        top:130px;
+    }
+    h1{
+        font-size: 30px;
+        
+    }
+    h1 span{
+        font-size: 30px;
+    }
+    p{
+        
+        font-size:15px;
+        text-align: center;
+    
+    }
+    
+
+    
+        
+
+}
